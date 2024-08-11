@@ -1,0 +1,90 @@
+
+body, html, #root, .App {
+  height: 100%;
+  margin: 0;
+  font-family: 'Avenir', sans-serif;
+  background-color: #060606;
+}
+
+.landing-page {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  mix-blend-mode: luminosity;
+  opacity: 0.8; /* Optional: Adjust opacity to fine-tune the effect */
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  margin-top: 400px; /* Adjust this value to move the content down */
+  /* Alternatively, use padding-top if preferred */
+  /* padding-top: 50px; */
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 0.7; /* Adjust line-height for better spacing */
+  margin-bottom: 50px; /* Increase or adjust as needed */
+
+}
+
+h1 span {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style the button with initial opacity */
+.register-button {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  background-color: #333335;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 100px;
+  cursor: pointer;
+  opacity: 0; /* Initial opacity for fade-in effect */
+  animation: fadeIn 3000ms ease-in-out forwards; /* Apply the fade-in effect */
+  animation-delay: 800ms; /* Delay before the animation starts */
+}
+
+.register-button:hover {
+  background-color: #444445;
+}
+
+.register-button:hover {
+  background-color: #444445;
+}
+ 
+
